@@ -9,6 +9,7 @@
     <script src="http://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -19,23 +20,35 @@
             </div>
         </div>
         <div class="row m-5">
-            <div class="col-6">
+            <div class="col-5 pl-4">
                 <p>
                     The fairies of Avalon have captured you. You know they are vulnerable to iron and silver, and if someone pours salt or sugar in front of them, 
                     they have to stop to count each grain one by one. The bigger the fairy, the harder it will be to defeat.
                 </p>
                 <p>
-                    You have access to iron, silver, salt, and sugar. By clicking on one of them, you will reveal the item's value and add that specific amount of vulnerability points to your total score.
+                    You have access to iron, silver, salt, and sugar. By clicking on one of them, you will reveal the item's value and add that specific amount of points to your total score.
                 </p>
                 <p>
                     Face the fairies, win the game, and escape by matching your total score with the random number you were given at the start of the game!
                 </p>
             </div>
-            <div class="col-6 text-center">
-                <img src="assets/images/fairy-escape-iron.jpg" class="img-thumbnail"/>
-                <img src="assets/images/fairy-escape-silver.jpg" class="img-thumbnail"/>
-                <img src="assets/images/fairy-escape-sugar.jpg" class="img-thumbnail"/>
-                <img src="assets/images/fairy-escape-salt.jpg" class="img-thumbnail"/>
+            <div class="col-7 pl-5 text-center">
+                <img id="iron" src="assets/images/iron.svg" class="" width="180px"/>
+                <img id="silver" src="assets/images/silver.svg" class="" width="180px"/>
+                <img id="sugar" src="assets/images/sugar.svg" class="" width="180px"/>
+                <img id="salt" src="./assets/images/salt.svg" class="" width="180px"/>
+                <div class="row text-left">
+                    <div class="col pt-3 pl-5 ml-5">
+                        <p id="fairy-points"></p>
+                        </hr>
+                        <p id="user-points"></p>
+                    </div>
+                    <div class="col pt-3 pl-5 ml-5">
+                            <p id="wins"></p>
+                        </hr>
+                            <p id="losses"></p>
+                    </div>
+                </div>
             </div>
         </div>
     
