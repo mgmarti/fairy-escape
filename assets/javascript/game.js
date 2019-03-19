@@ -11,7 +11,7 @@ $( document ).ready(function() {
     var salt = Math.floor(Math.random() * 12) + 1;
 
     //Score board text
-    $('#fairy-points').text("Fairy points: ");
+    $('#fairy-points').text("Fairy points: " + toEscape);
     $('#user-points').text("Your score: ");
     $('#wins').text("Wins: ");
     $('#losses').text("Losses: ");
@@ -25,7 +25,7 @@ $( document ).ready(function() {
         sugar = Math.floor(Math.random() * 12) + 1;
         salt = Math.floor(Math.random() * 12) + 1;
         $('#user-points').text("Your score: ");
-        $('#fairy-points').text("Fairy points: ");
+        $('#fairy-points').text("Fairy points: " + toEscape);
 
     };
     
@@ -34,11 +34,13 @@ $( document ).ready(function() {
        if(toEscape === pointsCounter) {
            alert('You\'ve escaped!')
            wins++;
+           $("#wins").text("Wins: " + wins);
            resetGame();
        }else if (pointsCounter > toEscape) {
-               alert('You lose! Try again.')
-               losses++;
-               resetGame();
+            alert('You lose! Try again.')
+            losses++;
+            $("#losses").text("Losses: "+ losses);
+            resetGame();
            }
        };
 
@@ -66,8 +68,6 @@ $( document ).ready(function() {
         $('#user-points').text("Your score: " + pointsCounter);
         scoreCheck();
        });
-
-
 });
 
 
