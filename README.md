@@ -12,9 +12,9 @@ Create another fun and interactive game for web browsers. This time, your app mu
 
 - When the player clicks one of the items, it will add a specific amount of points to the player's total score.
 
-    Your game will hide this amount until the player clicks an item.
-    When they do click one, update the player's score counter.
-    The player wins if their total score matches the random number from the beginning of the game.
+    - Your game will hide this amount until the player clicks an item.
+    - When they do click one, update the player's score counter.
+    - The player wins if their total score matches the random number from the beginning of the game.
 
 - The player loses if their score goes above the random number.
 
